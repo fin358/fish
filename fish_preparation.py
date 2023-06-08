@@ -46,7 +46,7 @@ for x, y in zip(blue_pixels[1], blue_pixels[0]):
     coord = (x, y)
     blue_coords.append(coord)
 
-green_coords = filter_coords(green_coords
+green_coords = filter_coords(green_coords)
 blue_coords = filter_coords(blue_coords)
 
 
