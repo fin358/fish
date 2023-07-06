@@ -1,0 +1,11 @@
+Parameters in descriptive_preparation.tif
+・R1-R2:10cm in image
+・B1-B2:Body length(width)
+・G1:Tip of dorsal fin
+
+
+Parameters in descriptive_measurement.tif
+・R1-R2:10cm in image
+・B1-B2:Body length(width)
+・Y1-Y2:Body length(height)
+・P1:midline
