@@ -53,7 +53,7 @@ def right_angle_line(line_coords, point_coords,b,g,r):
     
 # 画像を読み込む
 # Load image
-img = cv2.imread('input.tif')
+img = cv2.imread('figure/preparation_before.tif')
 if img is None:
     print("File could not be loaded")
 
@@ -72,7 +72,7 @@ cv2.imshow('image', img)
 
 # 画像を保存する
 # Save Image
-cv2.imwrite('output.tif', img)
+cv2.imwrite('figure/preparation_after.tif', img)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
