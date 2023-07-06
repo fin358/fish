@@ -60,7 +60,7 @@ def right_angle_line(line_coords, point_coords,r,g,b):
 # Load image
 img = cv2.imread('input.tif')
 if img is None:
-    print("ファイルが読み込めませんでした")
+    print("File could not be loaded")
 
 # 指定色が使われている座標の始点と終点を求める
 # Find the start and end points of the coordinates where the specified color is used
