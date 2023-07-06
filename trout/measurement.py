@@ -59,21 +59,24 @@ blue_dist = np.linalg.norm(np.array(blue_coords[0])-np.array(blue_coords[1]))
 # Find the distance of the belly from the midline
 lower_dist = np.linalg.norm(np.array(purple_coords[0])-np.array(yellow_coords[1]))
 
-# 体長(height、length)、体長(縦)に対する正中線から腹までの割合(l_h / h）を求める
-# Find body length (height, length) and the ratio of midline to belly (l_h / h) to body length (length)
+# 体長(縦,横)、体長(縦)に対する正中線から腹までの割合(l_h / h）を求める
+# Find body length (height, width) and the ratio of midline to belly (l_h / h) to body length (height)
 height = (yellow_dist*10)/red_dist
-length = (blue_dist*10)/red_dist
+width = (blue_dist*10)/red_dist
 rat = ((lower_dist*10)/red_dist) / ((yellow_dist*10)/red_dist)
 
 # 結果を表示する
 # Show results
 print("体長(height):", round(height,1),"cm")
-print("体長(length):", round(length,1),"cm")
+print("体長(width):", round(width,1),"cm")
 print("体長(縦)に対する中心線から腹までの割合(l_h / h)：",round(rat*100,1),"%")#lower_height/height
 
 # 画像を表示する
 # Show Image
 cv2.imshow('image', img)
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
