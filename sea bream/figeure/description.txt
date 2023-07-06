@@ -1,4 +1,9 @@
-Parameters in descriptive.tif
+Parameters in descriptive_preparation.tif
+・B1-B2:Body length(width)
+・G1:Tip of pectoral fin(upper)
+・R2:Tip of pectoral fin(lower)
+
+Parameters in descriptive_measurement.tif
 ・B1-B2:Body length(width)
 ・Y1-Y2:Body length(height)
 ・C1:Tip of pectoral fin(upper)
