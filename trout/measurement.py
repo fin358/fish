@@ -38,7 +38,7 @@ def color_coords(r, g, b):
     
 # 画像を読み込む
 # Load image
-img = cv2.imread('input.tif')
+img = cv2.imread('figure/measurement_before.tif')
 if img is None:
     print("File could not be loaded")
 
