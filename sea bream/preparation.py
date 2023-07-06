@@ -58,7 +58,7 @@ def right_angle_line(line_coords, point_coords,r,g,b):
     
 # 画像を読み込む
 # Load image
-img = cv2.imread('input.tif')
+img = cv2.imread('figure/preparation_before.tif')
 if img is None:
     print("File could not be loaded")
 
@@ -69,7 +69,7 @@ green_coords = filter_coords(color_coords(0,255,0))
 blue_coords = filter_coords(color_coords(255,0,0))
 
 # 指定の直線を体長(横)，指定の座標を胸鰭(上,下)の先端とし，関数right_angle_lineを呼び出す
-# Call the function right_angle_line with the specified line as the body length (horizontal) and the specified coordinate as the tip of the pectoral fin (upper,lower)
+# Call the function right_angle_line with the specified line as the body length (width) and the specified coordinate as the tip of the pectoral fin (upper,lower)
 right_angle_line(blue_coords,red_coords,0,0,255)
 right_angle_line(blue_coords,green_coords,0,255,0)
 cv2.line(img, red_coords[0], red_coords[0], (255, 255, 0), 1)
@@ -81,7 +81,7 @@ cv2.imshow('image', img)
 
 # 画像を保存する
 # Save Image
-cv2.imwrite('output.tif', img)
+cv2.imwrite('figure/preparation_after.tif', img)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
