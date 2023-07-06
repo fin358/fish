@@ -33,7 +33,7 @@ def color_coords(b, g, r):
     for x, y in zip(pixels[1], pixels[0]):
         coord = (x, y)
         color_coords.append(coord)
-        
+    
     return color_coords
 
 # 画像を読み込む
