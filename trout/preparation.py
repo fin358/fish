@@ -62,8 +62,8 @@ if img is None:
 green_coords = filter_coords(color_coords(0,255,0))
 blue_coords = filter_coords(color_coords(255,0,0))
 
-# 指定の直線を青，指定の座標を緑とし，関数right_angle_lineを呼び出す
-# Call the function right_angle_line with the specified line in blue and the specified coordinates in green
+# 指定の直線を体長(横)，指定の座標を背びれの先端とし，関数right_angle_lineを呼び出す
+# Call the function right_angle_line with the specified line as the body length (horizontal) and the specified coordinates as the tip of the dorsal fin
 right_angle_line(blue_coords,green_coords,0,255,0)
         
 # 画像を表示する
