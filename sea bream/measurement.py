@@ -77,7 +77,7 @@ raito4 = lower_dist / yellow_dist
 
 # 結果を表示する
 # Show results
-print("体長(length)を1としたときの体長(height)の比率:", round(raito1,))
+print("体長(length)を1としたときの体長(height)の比率:", round(raito1,3))
 print("体長(height)を1としたときの胸鰭の幅の比率:", round(raito2,3))
 print("体長(height)を1としたときの胸鰭(上)の幅の比率:", round(raito3,3))
 print("体長(height)を1としたときの胸鰭(下)の幅の比率:", round(raito4,3))
