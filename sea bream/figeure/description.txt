@@ -1,0 +1,11 @@
+Parameters in descriptive.tif
+・B1-B2:Body length(width)
+・Y1-Y2:Body length(height)
+・C1:Tip of pectoral fin(upper)
+・C2:Tip of pectoral fin(lower)
+
+Explanation of measurement.py execution results
+・raito1 = Y1-Y2 / B1-B2
+・raito2 = C1-C2 / Y1-Y2
+・raito3 = Y1-C1 / Y1-Y2
+・raito4 = Y1-C2 / Y1-Y2
