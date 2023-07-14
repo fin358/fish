@@ -18,10 +18,10 @@ def filter_coords(coords):
 
 # 画像内で指定色が使われている座標を取得する
 # Get the coordinates where the specified color is used
-def color_coords(r, g, b):
+def color_coords(b, g, r):
     # 使用する色のRGB値を定義する
     # Define the RGB values of the colors to be used
-    color = np.array([r,g,b])
+    color = np.array([b,g,r])
     
     # 画像中の指定色ピクセルの座標を取得する
     # Obtains the coordinates of a specified color pixel in an image
